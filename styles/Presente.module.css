@@ -1,0 +1,36 @@
+.presente {
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topo {
+    width: 100px;
+    height: 25px;
+    background-color: #7aa944;
+}
+
+.corpo {
+    width: 90px;
+    height: 60px;
+    background-color: #5c7e32;
+}
+
+.laco__horizontal,
+.laco__vertical {
+    position: absolute;
+    background-color: red;
+}
+
+.laco__horizontal {
+    top: 40px;
+    width: 90px;
+    height: 15px;
+}
+
+.laco__vertical {
+    width: 15px;
+    height: 100%;
+}
