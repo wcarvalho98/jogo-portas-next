@@ -3,7 +3,7 @@ import Porta from "../../../components/Porta";
 import { atualizarPortas, criarPortas } from "../../../functions/portas";
 import styles from '../../../styles/Jogo.module.css'
 import Link from "next/link"
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 
 export default function jogo() {
     const router = useRouter()
