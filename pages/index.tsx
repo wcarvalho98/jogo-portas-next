@@ -29,10 +29,12 @@ export default function Formulario() {
                     <EntradaNumerica text="Porta com presente?" value={comPresente}
                         onChange={novaPortaComPresente => setComPresente(novaPortaComPresente)}
                         podeIncrementar={averiguaAdicionar(comPresente, qtdePortas)}
-                        podeDecrementar={averiguaRemover(comPresente, 1)} />
+                        podeDecrementar={averiguaRemover(comPresente, 0)} />
                 </Cartao>
                 <Cartao bgcolor="#28a085">
-                    <Link href={`/jogo/${qtdePortas}/${comPresente}`} passHref>
+                    <Link href={`/jogo/${qtdePortas}/${comPresente > 0 ?
+                        comPresente :
+                        (Math.floor(Math.random() * qtdePortas) + 1)}`} passHref>
                         <h2 className={styles.link}>Iniciar</h2>
                     </Link>
                 </Cartao>

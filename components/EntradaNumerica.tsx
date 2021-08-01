@@ -15,7 +15,7 @@ export default function EntradaNumerica(props: EntradaNumericaProps) {
     return (
         <div className={styles.entradaNumerica}>
             <span className={styles.text}>{props.text}</span>
-            <span className={styles.value}>{props.value}</span>
+            <span className={styles.value}>{props.value > 0 ? props.value : "***"}</span>
             <div className={styles.botoes}>
                 <button className={styles.btn} onClick={dec} disabled={!props.podeDecrementar}>-</button>
                 <button className={styles.btn} onClick={inc} disabled={!props.podeIncrementar}>+</button>
