@@ -32,7 +32,7 @@ export default function Formulario() {
                         podeDecrementar={averiguaRemover(comPresente, 1)} />
                 </Cartao>
                 <Cartao bgcolor="#28a085">
-                    <Link href={`/jogo/${qtdePortas}/${comPresente}`}>
+                    <Link href={`/jogo/${qtdePortas}/${comPresente}`} passHref>
                         <h2 className={styles.link}>Iniciar</h2>
                     </Link>
                 </Cartao>

@@ -18,7 +18,7 @@ export default function Jogo() {
         const temPresenteValido = comPresente >= 1 && comPresente <= porta
 
         setValido(qtdePortasValidas && temPresenteValido)
-    }, [portas])
+    }, [portas, router.query.portas, router.query.temPresente])
 
     useEffect(() => {
         const porta = +router.query.portas
@@ -39,7 +39,7 @@ export default function Jogo() {
                 {valido ? renderizarPortas() : <h1>Valores inválidos!</h1>}
             </div>
             <div className={styles.botoes}>
-                <Link href="/">
+                <Link href="/" passHref>
                     <button style={{ cursor: "pointer" }}>Reiniciar jogo</button>
                 </Link>
             </div>
