@@ -30,3 +30,15 @@
     background-color: #0002;
     border-radius: 3rem;
 }
+
+@media screen and (max-width: 880px) {
+    .formulario {
+        height: auto;
+        margin: 5px 0;
+    }
+
+    .formulario > div {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
